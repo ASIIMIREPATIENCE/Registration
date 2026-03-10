@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration form 2</title>
+    <link rel="stylesheet" href="../styles/reg.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="profile">
+          <div class="profile2"></div>
+        </div>
+        <div class="nav">
+          <div><a href="dashboard.html">Dashboard</a></div>
+          <div><a href="stock.html">Stock</a></div>
+          <div><a href="sales.html">Sales</a></div>
+          <div><a href="profit.html">Profit</a></div>
+          <div><a href="documwntation.html">Documentation</a></div>
+        </div>
+      </div>
+
+      <div class="content">
+        <form class="sales-form">
+          <section>
+            <h1>Sales Registration</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="sales-date">Sales Date</label>
+                <input type="date" id="sales-date" required />
+              </div>
+              <div class="input-section">
+                <label for="sales-person">Sales Person</label>
+                <select id="sales-person" required>
+                  <option>Select Attendant</option>
+                  <option>Drake Aribariho</option>
+                  <option>Joan Chelimo</option>
+                  <option>Ken Ojok</option>
+                  <option>Tom Okello</option>
+                  <option>Joe Banks</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1>Customer Details</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="customer-name">Full Name</label>
+                <input
+                  type="text"
+                  id="cust-name"
+                  placeholder="Insert Full Name"
+                />
+              </div>
+              <div class="input-section">
+                <label for="customer-phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="cust-phone"
+                  placeholder="Insert phone number"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-section">
+                <label for="customer-email">Email</label>
+                <input type="email" id="cust-email" placeholder="Enter email" />
+              </div>
+              <div class="input-section">
+                <label for="cust-type">Customer Type</label>
+                <select id="cust-type" required>
+                  <option>Select Customer Type</option>
+                  <option>Retail</option>
+                  <option>Wholesale</option>
+                </select>
+              </div>
+            </div>
+          </section>
+
+          <section>
+            <h1>Items</h1>
+            <div class="input-container">
+              <div class="input-section">
+                <label for="product 1">Product</label>
+                <input
+                  type="text"
+                  id="product 1"
+                  required
+                  placeholder="Input Product"
+                />
+              </div>
+              <div class="input-section">
+                <label for="quantity1">Quantity</label>
+                <input type="text" id="quantity1" required />
+              </div>
+              <div class="input-section">
+                <label for="price1">Unit Price</label>
+                <input type="text" id="price1" required />
+              </div>
+            </div>
+
+            <div class="input-container">
+              <div class="input-section">
+                <label for="product 2">Product</label>
+                <input
+                  type="text"
+                  id="prdt2"
+                  required
+                  placeholder="Input Product"
+                />
+              </div>
+              <div class="input-section">
+                <label for="quantity2">Quantity</label>
+                <input type="text" id="quantity2" required />
+              </div>
+              <div class="input-section">
+                <label for="price2">Unit Price</label>
+                <input type="text" id="price2" required />
+              </div>
+            </div>
+
+            <div>
+              <button type="reset" class="button">Cancel</button>
+              <button type="submit" class="button">Submit</button>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
